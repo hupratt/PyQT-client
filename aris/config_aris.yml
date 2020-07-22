@@ -1,0 +1,55 @@
+selenium:
+    FirefoxBinary : 'K://'
+    Geckodriver_binary : "K://"
+
+# shared constants
+aris:
+    # log name of all scripts in this app
+    log_name : "aris.log"
+    # db that holds the 1 to 1 relationship between ARIS id and JIRA id
+    mapping_file_name : '.xlsx'
+    # additional log info
+    verbose : True
+    # url for ticket creation and sync
+    target : "https://.com/"
+    # path that holds a configuration.py file that holds sensitive credentials
+    config_path : 'C:\\'
+    # master path that holds all of the downloads and the mapping file
+    master : "ARIS"
+    # master path that holds all of the scripts logs, intermediary pickles as well as consolidated xls and csv files
+    apps : "ARIS_apps"
+    # Pickle that holds all of the consolidated data. This is an important input for the sync script
+    json_dump_file : "data.json"
+    
+# script specific constants
+scrape_aris:
+    # specific ARIS url to consult a process
+    process_url : "http://"
+    # ARIS url to perform a search
+    search_url : "http://"
+    # Namespace for the logger
+    script_name : "scrape_aris"
+    # pickle that holds all the urls we should visit
+    pickle_file : "liste.txt"
+    # download master folder that holds the renamed processes
+    download_folder : 'download'
+    # download master folder that holds the soon to be renamed processes
+    temp_folder : 'temp'
+
+# script specific constants
+created_tcs:
+    # download master folder that holds the renamed processes
+    download_folder : 'download'
+    # specific xray field that creates a tree for the test storage
+    test_path : '/'
+    # which jria project should the ticket be created in?
+    JIRA_project : '/'
+    # file name of the consolidated ouput
+    consolidated_file_name : 'Consolidated'
+    # Namespace for the logger 
+    script_name : "create_tcs"
+
+# script specific constants
+sync:
+    # Namespace for the logger 
+    script_name : "sync"

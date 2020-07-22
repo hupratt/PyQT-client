@@ -1,0 +1,39 @@
+jira:
+    URL_1 : https://jira...
+    URL_2 : )&maxResults=1000
+    JQL : Project in (...
+    CREDENTIALS : C:\\
+    LINK : "&startAt="
+    START_AT : 0
+    VERBOSE : True
+    RUN_UNIT_TEST : True
+    BASE_URL : https://jira...
+    
+test:
+    URL_1 : https://jira...
+    URL_2 : )&maxResults=1000
+    PSP : ...
+    BASE_URL : 'https://jira...
+    
+deploy:
+    URL_1 : https://jira...
+    URL_2 : )&maxResults=1000
+    JQL : project = ...
+    BASE_URL : https://jira...
+    
+release:
+    URL_1 : https://jira...
+    URL_2 : "')&maxResults=1000"
+    RELEASE_VERSION : 2019...
+    SYSTEM : ...
+    DEPLOY_DATE : '20th of July'
+    
+barros:
+    URL_1 : "https://jira..."
+    URL_2 : )&maxResults=1000
+    
+unittest:
+    TEST_URL : "https://jira..."
+    TEST_watcher1 : ['jose.barros@.com']
+    TEST_watcher2 : ['jose.barros@.com', 'thomas.smits@.com']
+    TEST_call : 'https://jira...'
